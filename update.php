@@ -74,7 +74,7 @@ $row = mysqli_fetch_array($res);
   <!-- ======form ======= -->
   <form action="" method="post" name="FORM" class="FORM" enctype="multipart/form-data" onsubmit="return validform()">
 
-    <h1 class="head">Create Data</h1>
+    <h1 class="head">Update Data</h1>
 
     <div class="imgtext">
     <!-- =======================username===================== -->
