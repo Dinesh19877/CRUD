@@ -137,3 +137,10 @@ inputFile.addEventListener('change', function () {
 		}
 		reader.readAsDataURL(image);
 })
+const tooglepassword = document.querySelector("#togglePassword");
+const password1 = document.querySelector("#password");
+tooglepassword.addEventListener("click" , function(){
+    const type = password1.getAttribute("type")=== "password" ? "text" :"password";
+    password1.setAttribute("type",type );
+    this.classList.toggle("bi-eye")
+})
