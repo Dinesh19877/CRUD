@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    }
+   
+  :root {
+  --white: rgb(31, 30, 30);
+  
+  }
+  html {
+    font-size: 62.5%;
+    width: 100%;
+    background-color: blueviolet;
+    /*========== 1rem=10px========== */
+  }
+
+  /* ==============form starts here=========== */
+  form{
+    width: 75rem;
+    height: auto;
+    border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+  
+  
+  
+  /* display: grid;
+  place-items: center; */
+  }
+  /* =============heading for registration form=================== */
+  .head{
+    text-transform: uppercase;
+    text-align: center;
+    height: 7rem;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 7rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .imgtext{
+    display: flex;
+
+  }
+  .form_con{
+  
+  position: relative;
+  left: 5.5rem;
+  margin-top: 2.5rem;
+  }
+  /* =====================data input box=========================== */
+  .textfield{
+   padding: 1rem;
+    width: 40rem;
+    outline: none;
+     background: none;
+    border:none;
+    border-radius: 0.6rem;
+    color:var(--white);
+    font-size: 2rem;
+    padding-left: 6rem;
+    border:  0.1rem solid rgb(14, 13, 13);
+    z-index: -1;
+  
+  }
+  
+  
+
+  
+  /* ============icon========== */
+  .icon{
+    position: absolute;
+    top:1.1rem;
+    left: 2rem;
+    color:var(--white);
+    font-size: 2rem;
+  }
+  /* ============================focus on clicking the label======================================= */
+  .textfield:focus{
+    border: 0.1rem solid rgb(7, 64, 7);
+  
+  }
+  /* ====================text goes upward on click===================== */
+ 
+  
+  
+  /* =================== button =========================*/
+  .button-1 {
+    border-radius: 8px;
+    border:1px solid blueviolet; 
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    background: transparent;
+    line-height: 20px;
+    padding: 10px 16px;
+    text-align: center;
+    touch-action: manipulation;
+    width: 14rem;
+    text-transform: capitalize;
+  }
+  .btn{
+    padding-bottom: 2rem;
+  }
+  
+  .button-1:hover{
+  background-color: rgba(250, 252, 250, 0.79);
+  color: black;
+  }
+  .error{
+    font-size: 1.5rem;
+    color:rgb(240, 97, 8);
+    margin-top: 0.12rem;
+  }
+
+  .error1{
+    font-size: 15px;
+    margin-top: 18px;
+    color: red;
+}
+ 
+  .passshow{
+    font-size: 2rem;
+    position: relative;
+    right: 4rem;
+  }
+  .pass{
+    padding-right:5.3rem ;
+    width: 39rem;
+  }
+  
+  i{
+    cursor: pointer;
+  }
+
+
+
+
+
+
+  
+
+:root {
+	--blue: #0071FF;
+	--light-blue: #B6DBF6;
+	--dark-blue: blueviolet;
+	--grey: #f2f2f2;
+}
+
+.img{
+    width: 270px;
+    height: 200px;
+position: absolute;
+right: 20px;
+
+}
+
+.container {
+	max-width: 270px;
+	width: 100%;
+	background: #fff;
+	padding: 30px;
+	border-radius: 30px;
+}
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 240px;
+	background: var(--grey);
+	margin-bottom: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.img-area .icon {
+	font-size: 100px;
+}
+.img-area h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+.img-area p {
+	color: #999;
+    font-size: 13px;
+}
+.img-area p span {
+	font-weight: 600;
+}
+.img-area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 100;
+}
+.img-area::before {
+	content: attr(data-img);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: all .3s ease;
+	z-index: 200;
+}
+.img-area.active:hover::before {
+	opacity: 1;
+}
+.select-image {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
+	border-radius: 15px;
+	background: var(--blue);
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+  text-align: center;
+  cursor: pointer;
+	transition: all .3s ease;
+}
+.select-image:hover {
+	background: var(--dark-blue);
+}

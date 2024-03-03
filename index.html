@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <!-- ======form ======= -->
+    <form
+      action="./register.php"
+      method="post"
+      name="FORM"
+      class="FORM"
+      enctype="multipart/form-data"
+      onsubmit="return validform()"
+    >
+      <h1 class="head">Create Data</h1>
+
+      <div class="imgtext">
+        <!-- =======================username===================== -->
+        <div class="text">
+          <div class="form_con">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="textfield"
+              placeholder="Enter your full name "
+            />
+            <i class="fa-solid fa-user icon"></i>
+            <p class="error" id="name_error"></p>
+          </div>
+          <!-- ===========================email============================== -->
+          <div class="form_con">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="textfield"
+              placeholder=" Enter your E-mail"
+            />
+            <i class="fa-solid fa-envelope icon"></i>
+            <p class="error" id="email_error"></p>
+          </div>
+          <!-- ===========================phone number============================== -->
+          <div class="form_con">
+            <input
+              type="text"
+              maxlength="10"
+              name="number"
+              id="number"
+              class="textfield"
+              placeholder="Enter your Phone number "
+            />
+            <i class="fa-solid fa-phone icon"></i>
+            <p class="error" id="pnumber_error"></p>
+          </div>
+          <!-- ===========================password============================== -->
+          <div class="form_con">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="textfield pass"
+              placeholder=" Enter Password"
+            />
+            <i class="fa-solid fa-lock icon"></i>
+            <i class="bi bi-eye-slash passshow" id="togglePassword"></i>
+            <p class="error" id="password_error"></p>
+          </div>
+          <div class="form_con">
+            <input
+              type="submit"
+              name="sumb"
+              id="submit"
+              class="button-1"
+              value="Submit"
+              placeholder=""
+            />
+          </div>
+          <div class="form_con btn">
+            <a href="./view.php">
+              <input
+                type="button"
+                id="submit1"
+                class="button-1"
+                value="veiw data"
+            /></a>
+          </div>
+        </div>
+        <!-- ===========================image upload=========================== -->
+        <div class="img">
+          <div class="container">
+            <input type="file" id="file" name="file" accept="image/*" hidden />
+            <div class="img-area" data-img="">
+              <i class="bx bxs-cloud-upload icon"></i>
+              <h3>Upload Image</h3>
+              <p>Image size must be less than <span>2MB</span></p>
+            </div>
+            <p class="select-image">Select Image</p>
+            <p class="error1" id="img_error"></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="./registration.js"></script>
+</html>
